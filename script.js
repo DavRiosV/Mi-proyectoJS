@@ -5,12 +5,12 @@ console.log(empresa);
 alert(empresa);
 
 
-// const user = prompt("Ingrese su usuario")
-// const email = prompt("Ingrese su correo")
-// const contrasenia = prompt("Ingrese su contraseña")
+var userIngreso = prompt("Ingrese su usuario")
+var email = prompt("Ingrese su correo")
+var contrasenia = prompt("Ingrese su contraseña")
 // const usuarioRegistrado = `${user}`
-var usuarioConEmail = "davidgmail.com"
-var userPassword = `123456Asd`
+var usuarioConEmail = email
+var userPassword = contrasenia
 
 
 var validacion = false;
@@ -37,20 +37,20 @@ function nuevoUsuariov2 (user) {
         } 
    
 }
-const nombre = prompt("Ingrese su nombre y apellido")
+const nombre = userIngreso
 if( nombre.length <6){
     alert("Nombre ingresado es muy corto. Por favor ingrese su nombre y apellido")
 } else {
     alert("El nombre ingresado es valido")
 }
     do { 
-        const usuario = prompt("Ingrese su usuario");
+        const usuario = prompt("Ingrese correo con cual se registro");
         const password = prompt("Ingrese su contraseña");
         const usuarioValido = comparaDatos(usuario, usuarioConEmail);
         const passwordValida = comparaDatos(password, userPassword);
 
         if (usuarioValido && passwordValida) {
-            alert(`¡Bienvenido ${nombre}`)
+            alert(`¡Bienvenido ${nombre}!`)
             nuevoUsuario(usuario)
         } else {
             if (!usuarioValido && !passwordValida) {
@@ -66,22 +66,3 @@ if( nombre.length <6){
         }
         console.log("validacion:" + validacion)
     } while (validacion)
-
-
-
-
- 
-
-
-
-
-
-// if (usuarioConEmail = email) {
-//     console.log("¡Gracias por registrarte!")
-// } else {
-//     console.log("Ingrese un correo valido")
-// }
-
-// console.log("¡Hola Bienvenido! " + `${nombre}`)
-
-// console.log("Su c000000000000000000000orreo es" + " " + `${email}`)
