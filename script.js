@@ -8,7 +8,6 @@ alert(empresa);
 var userIngreso = prompt("Ingrese su usuario")
 var email = prompt("Ingrese su correo")
 var contrasenia = prompt("Ingrese su contraseña")
-// const usuarioRegistrado = `${user}`
 var usuarioConEmail = email
 var userPassword = contrasenia
 
